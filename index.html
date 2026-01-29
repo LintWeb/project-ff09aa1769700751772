@@ -3,9 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project-ff09aa1769700751772</title>
+    <title>Cricket Championship 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x400/27ae60/ffffff?text=Cricket+Field');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about, .teams, .schedule, .standings {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .teams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .team-card {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .schedule-table, .standings-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .schedule-table th, .schedule-table td, .standings-table th, .standings-table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        .schedule-table th, .standings-table th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero {
+                height: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Blank white page -->
+<header>
+    <h1>Cricket Championship 2025</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#standings">Standings</a></li>
+    </ul>
+</nav>
+<section class="hero">
+    <div>
+        <h1>Welcome to the Cricket Championship</h1>
+        <p>The ultimate battle on the pitch!</p>
+    </div>
+</section>
+<section id="about" class="about">
+    <h2>About the Competition</h2>
+    <p>The Cricket Championship 2025 is an annual tournament featuring the best cricket teams from around the region. This year, we have eight teams competing in a round-robin format followed by playoffs.</p>
+    <p>The tournament emphasizes fair play, sportsmanship, and the spirit of cricket. Matches are played on weekends, with finals scheduled for the end of the season.</p>
+</section>
+<section id="teams" class="teams">
+    <h2>Participating Teams</h2>
+    <div class="teams-grid">
+        <div class="team-card">
+            <h3>Team A</h3>
+            <p>Captain: John Doe</p>
+            <p>Founded: 2010</p>
+        </div>
+        <div class="team-card">
+            <h3>Team B</h3>
+            <p>Captain: Jane Smith</p>
+            <p>Founded: 2012</p>
+        </div>
+        <div class="team-card">
+            <h3>Team C</h3>
+            <p>Captain: Bob Johnson</p>
+            <p>Founded: 2015</p>
+        </div>
+        <div class="team-card">
+            <h3>Team D</h3>
+            <p>Captain: Alice Brown</p>
+            <p>Founded: 2018</p>
+        </div>
+        <div class="team-card">
+            <h3>Team E</h3>
+            <p>Captain: Charlie Wilson</p>
+            <p>Founded: 2020</p>
+        </div>
+        <div class="team-card">
+            <h3>Team F</h3>
+            <p>Captain: Diana Lee</p>
+            <p>Founded: 2021</p>
+        </div>
+        <div class="team-card">
+            <h3>Team G</h3>
+            <p>Captain: Edward Davis</p>
+            <p>Founded: 2019</p>
+        </div>
+        <div class="team-card">
+            <h3>Team H</h3>
+            <p>Captain: Fiona Garcia</p>
+            <p>Founded: 2017</p>
+        </div>
+    </div>
+</section>
+<section id="schedule" class="schedule">
+    <h2>Match Schedule</h2>
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Team 1</th>
+                <th>Team 2</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2025-02-01</td>
+                <td>10:00 AM</td>
+                <td>Team A</td>
+                <td>Team B</td>
+                <td>Stadium 1</td>
+            </tr>
+            <tr>
+                <td>2025-02-02</td>
+                <td>2:00 PM</td>
+                <td>Team C</td>
+                <td>Team D</td>
+                <td>Stadium 2</td>
+            </tr>
+            <tr>
+                <td>2025-02-03</td>
+                <td>10:00 AM</td>
+                <td>Team E</td>
+                <td>Team F</td>
+                <td>Stadium 1</td>
+            </tr>
+            <tr>
+                <td>2025-02-04</td>
+                <td>2:00 PM</td>
+                <td>Team G</td>
+                <td>Team H</td>
+                <td>Stadium 2</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</section>
+<section id="standings" class="standings">
+    <h2>Current Standings</h2>
+    <table class="standings-table">
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Team</th>
+                <th>Played</th>
+                <th>Won</th>
+                <th>Lost</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Team A</td>
+                <td>5</td>
+                <td>4</td>
+                <td>1</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Team B</td>
+                <td>5</td>
+                <td>3</td>
+                <td>2</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Team C</td>
+                <td>5</td>
+                <td>3</td>
+                <td>2</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Team D</td>
+                <td>5</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <!-- Add more rows -->
+        </tbody>
+    </table>
+</section>
+<footer>
+    <p>&copy; 2025 Cricket Championship. All rights reserved.</p>
+</footer>
 </body>
 </html>
